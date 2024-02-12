@@ -14,8 +14,10 @@ document.getElementById("add2").onclick = function(){
 }
 document.getElementById("add3").onclick = function(){
     cartquantity = cartquantity + 3;
-    console.log(`Cart quantity: ${cartquantity}`)
+    console.log(`Cart quantity: ${cartquantity}`);
 }
 document.getElementById("reset").onclick = function(){
-    window.alert("Do you want to reset all that you have done so far?")
+    cartquantity = 0;
+    console.log("Your cart is empty.");
+    console.log(`Cart quantity: ${cartquantity}`);
 }
