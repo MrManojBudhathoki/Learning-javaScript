@@ -7,14 +7,25 @@
     <body>
         <h1>Welcome to the scession</h1>
         <p>Hello, my name is Manoj Budhathoki and I am from Salyan. Right now I am in Australia studying Bachelors of Information and Technology talking about my semisters I have already completed three semisters and from one month from now I will be commencing my fourth semister after that I have one two  more semmister left for graduation and than I will be declared as graduate.</p>
-        
-        <label for="mycheckbox">Student</label>
-        <input type="checkbox" id="mycheckbox"><br><br>
+        <div>
+            <label for="mycheckbox">Student</label>
+        <input type="checkbox" id="mycheckbox">
+        <label id="discountMessage"></label>
+        </div><br>
 
-        <label id="discountMessage"></label><br><br>
-        <button id="SubmitButton">Submit</button>
+        <div>
+            <label for="visaButton">Visa</label>
+            <input type="radio" name="card" id="visaButton">
+    
+            <label for="masterCardButton">Mastercard</label>
+            <input type="radio" name="card" id="masterCardButton">
+    
+            <label for="paypalButton">Paypal</label>
+            <input type="radio" name="card" id="paypalButton">
+        </div><br>
+       <label id="cardMessage"></label><br><br>
+        <button id="SubmitButton">submit</button><br>
 
-        </div>
         <script src="index.js"></script>
     </body>
 </html>

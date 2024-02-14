@@ -95,6 +95,88 @@ document.getElementById("SubmitButton").onclick = function(){
 }//
 
 6.
+//useful string properties and methods
+
+//let userName = " Manoj Budhathoki "
+//let phoneNumber = 298-283-983-39; 
+
+//console.log(userName.length)
+//console.log(userName.indexOf("j"))
+//console.log(userName.lastIndexOf("a"))
+//console.log(userName.charAt(4))
+//console.log(userName.trim())
+//console.log(userName.toLowerCase())
+//console.log(userName.toUpperCase())
+phoneNumber = phoneNumber.replaceAll("-", "");
+console.log(phoneNumber);//
+
+7.
+// slice() extracts a section of a string and 
+//         returns it as a new string, without
+//         modifying the original string.
+
+let fullName = "Manoj Budhathoki";
+let firstName;
+let lastName;
+
+//firstName = fullName.slice(0, 5);
+//lastName = fullName.slice(6);
+
+firstName = fullName.slice(0, fullName.indexOf(" "));
+lastName = fullName.slice(fullName.indexOf(" ") + 1);
+
+console.log(`My full name is ${firstName} ${lastName}.`);//
+
+8.
+//method chaining = calling one method after another
+//                  in one continuous line of code.
+
+let userName = "Manoj Budhathoki";
+
+//let letter = userName.charAt(0);
+//letter = letter.toUpperCase();
+//console.log(letter); This is done without method chaining.
+
+let letter = userName.charAt(0).toUpperCase();
+console.log(letter);//This is done with method chaining.//
+
+9.
+// if statement = a basic form of decision making 
+//                if a condition is true, then do something 
+//                if not, then don't do it!
+
+//let age = window.prompt("Enter your age: ");
+/*
+if(age > 60){
+    console.log("You are an senior citizen!")
+}
+else if(age >= 18){
+    console.log("You are an adult!");
+  
+}
+else if(age < 0){
+    console.log("YOU HAVEN'T BEEN BORN YET!");
+}
+else if(age > 60){
+    console.log("You are an senior citizen!")
+}
+else{
+    console.log("You are an child!");
+} */
+
+/*let student = true;
+
+if(true){
+    console.log("You can enter inside the class.")
+}
+else{
+    console.log("You are not an student so you are not allowed to enter inside the class.")
+}*//
+
+10.
+
+
+
 
 
 
