@@ -174,6 +174,40 @@ else{
 }*//
 
 10.
+//.Use of .checked property.
+document.getElementById("SubmitButton").onclick = function(){
+    const mycheckbox = document.getElementById("mycheckbox");
+    const visaButton = document.getElementById("visaButton");
+    const masterCardButton = document.getElementById("masterCardButton");
+    const paypalButton = document.getElementById("paypalButton");
+
+    if(mycheckbox.checked){
+        document.getElementById("discountMessage").innerHTML = "You are entitled to a discount.";
+
+    }
+    else{
+        document.getElementById("discountMessage").innerHTML = "You are not a student and are not entitled to a discount.";
+
+    }
+
+    if(visaButton.checked){
+        document.getElementById("cardMessage").innerHTML = "You selected visa for the payment method.";
+    }
+    else if(masterCardButton.checked){
+        document.getElementById("")
+        document.getElementById("cardMessage").innerHTML = "You selected mastercard for the payment method.";
+
+    }
+    else if(paypalButton.checked){
+        document.getElementById("cardMessage").innerHTML = "You selected paypal for the payment method.";
+    }
+    else{
+        document.getElementById("cardMessage").innerHTML = "Please select payment option.";
+    }
+}//
+
+
+11.
 
 
 
